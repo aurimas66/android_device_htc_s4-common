@@ -71,7 +71,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.gps.qmienabled=true \
     ro.baseband.arch=msm \
     ro.product.wireless=WCN3660 \
-    ro.qualcomm.bt.hci_transport=smd
+    ro.qualcomm.bt.hci_transport=smd \
+    ro.telephony.ril_class=HTCQualcommRIL \
+    ro.telephony.ril.v3=skipradiooff
 
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/htc/s4-common/common-vendor.mk)
